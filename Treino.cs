@@ -475,7 +475,7 @@ namespace distancia
     }
 }
 */
-namespace gasto_combustivel
+/*namespace gasto_combustivel
 { 
     class Program
     {
@@ -492,5 +492,155 @@ namespace gasto_combustivel
             Console.WriteLine(resultado.ToString("F3", CultureInfo.InvariantCulture));
         }
     }
-}
+}*/
+/*namespace cedulas
+{ 
+    class program   
+    {
+        static void Main (string [] args)
+        {
+            int N, calculo, resto, nota;
+
+            N = int.Parse(Console.ReadLine());
+            Console.WriteLine(N);
+            resto = N;
+
+            nota = 100;
+            calculo = resto / nota;
+            Console.WriteLine(calculo + " nota(s) de R$" + nota+",00");
+
+            resto = resto % nota;
+
+            nota = 50;
+            calculo = resto / nota;
+            Console.WriteLine(calculo + " nota(s) de R$" + nota + ",00");
+            resto = resto % nota;
+
+            nota = 20;
+            calculo = resto / nota;
+            Console.WriteLine(calculo + " nota(s) de R$" + nota + ",00");
+            resto = resto % nota;
+
+            nota = 10;
+            calculo = resto / nota;
+            Console.WriteLine(calculo + " nota(s) de R$" + nota + ",00");
+            resto = resto % nota;
+
+            nota = 5;
+            calculo = resto / nota;
+            Console.WriteLine(calculo + " nota(s) de R$" + nota + ",00");
+            resto = resto % nota;
+
+            nota = 2;
+            calculo = resto / nota;
+            Console.WriteLine(calculo + " nota(s) de R$" + nota + ",00");
+            resto = resto % nota;
+
+            nota = 1;
+            calculo = resto / nota;
+            Console.WriteLine(calculo + " nota(s) de R$" + nota + ",00");
+
+
+
+        }
+    }
+}*/
+
+/*
+namespace cedulas
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            int horas;
+
+            Console.WriteLine("Quantas horas ?");
+            
+            horas = int.Parse(Console.ReadLine());
+
+            if (horas < 12)
+            {
+                Console.WriteLine("Bom dia, para você");
+            }
+            
+            else if (horas < 18)
+
+            {
+                Console.WriteLine("Boa tarde, para você");
+            }
+            else
+            {
+                Console.WriteLine("Boa noite.");
+            }
+
+
+        }
+    } }*/
+/*
+namespace nota { 
+    class program
+    {
+        static void Main (string[] args)
+        {
+            double nota, nota1, final;
+
+            Console.WriteLine("Ola indique sua primeira nota : ");
+            nota = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.WriteLine("indique sua segunda nota : ");
+            nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            final = nota + nota1;
+
+            if (final > 60)
+            {
+                Console.WriteLine("Parabens você passou, sua nota final é " + final.ToString("F2",CultureInfo.InvariantCulture));
+            }
+            else
+            {
+                Console.WriteLine("Parabens você reprovou, sua nota final é " + final.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("REPROVADO");
+            } 
+        }
+    }
+}*/
+
+    namespace nota
+    {
+        class program
+        {
+            static void Main(string[] args)
+            {
+
+                double A, B, C, delta,x,x1;
+
+                String[] vet = Console.ReadLine().Split(' ');
+                A = double.Parse(vet[0], CultureInfo.InvariantCulture);
+                B = double.Parse(vet[1], CultureInfo.InvariantCulture);
+                C = double.Parse(vet[2], CultureInfo.InvariantCulture);
+
+                delta = Math.Pow(B, 2) - 4 * A * C;
+
+                if ((A * C) == 0.0 || delta < 0.0 )
+                {
+                
+                    Console.WriteLine("Impossivel Calcular");
+
+                }
+
+                else
+
+                {
+                    x = (-B + Math.Sqrt(delta)) / (2.0 * A);
+                    x1 = (-B - Math.Sqrt(delta)) / (2.0 * A);
+
+                    Console.WriteLine("X1 = " + x.ToString("F5",CultureInfo.InvariantCulture));
+                    Console.WriteLine("X2 = " + x1.ToString("F5", CultureInfo.InvariantCulture));
+                }
+            }
+        }
+    }
+
 

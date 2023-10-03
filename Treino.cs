@@ -645,8 +645,7 @@ namespace nota {
 
 
 */
-
-namespace nota
+/*namespace nota
 {
     class program
     {
@@ -675,3 +674,105 @@ namespace nota
         }
     }
 }
+*/
+/*
+namespace cobrança
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            double cobra;
+
+            int minutos;
+
+            minutos = int.Parse(Console.ReadLine());
+
+            cobra = 50.00;
+
+            if (minutos > 100){
+
+                cobra += (minutos - 100) * 2;
+
+            }
+
+                Console.WriteLine("Valor a pagar : R$" + (cobra));
+
+        }
+    }
+}*/
+/*
+namespace banana
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            int x = int.Parse(Console.ReadLine());
+            string dia;
+
+            switch (x)
+            {
+                case 1:
+                    dia = "Domingo";
+                break;
+
+                case 2:
+                    dia = "Segunda";
+                break;
+                case 3:
+                    dia = "Terça";
+                break;
+                case 4:
+                    dia = "Quarta";
+                break;
+                case 5:
+                    dia = "Quinta";
+                break;
+                case 6:
+                    dia = "Sexta";
+                break;
+                case 7:
+                    dia = "SabAAAAAAAAAASSO";
+                break;
+
+                default:
+                    dia = "Numero invalido";
+                    break;
+
+            }
+            Console.WriteLine("O dia da semana é : " + dia);
+
+        }
+    }*/
+/*
+namespace banana
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+            int A, B;
+
+            string[] vet = Console.ReadLine().Split(' ');
+
+            A = int.Parse(vet[0]);
+
+            B = int.Parse(vet[1]);
+
+            if ((A % B) == 0 || (B % A) == 0)
+            {
+
+                Console.WriteLine("Sao Multiplos");
+            }
+            else
+            {
+                Console.WriteLine("Nao sao Multiplos");
+            }
+        }
+    }
+}*/
+

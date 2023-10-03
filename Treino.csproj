@@ -65,6 +65,7 @@
     <Compile Include="BeeCrowd_Desafios\1035 - Seleção 1.cs" />
     <Compile Include="BeeCrowd_Desafios\1044.cs" />
     <Compile Include="BeeCrowd_Desafios\1038.cs" />
+    <Compile Include="BeeCrowd_Desafios\1037.cs" />
     <Compile Include="Treino.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
